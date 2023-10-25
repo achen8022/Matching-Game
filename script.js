@@ -1,4 +1,0 @@
-const deck = {
-    id:
-    
-}
