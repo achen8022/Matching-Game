@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Game</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .column{
+            float: left;
+            width: 24.5%;
+            padding: 5px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display:table;
+        }
+        button {
+            background-color: #ffcc00;
+            border: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+    <scrpit src = "script.js" async></scrpit>
+</head>
+<body>
+    <!--Start of row 1-->
+    <!--
+        Red = 1
+        Orange = 2
+        Yellow = 3
+        Green = 4
+        Green Blue = 5
+        Blue = 6
+        Purple = 7
+        Dark Purple = 8
+    -->
+    <div class = "row">
+        <div class = "column">
+            <p>
+                <button id="1" class = "red" onclick="changeRed()">Red</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button id = "2" class = "orange" onclick = "changeOrange()">Orange</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Yellow</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Green</button>
+            </p>
+        </div>
+    </div>
+    <!--End of row 1-->
+
+
+    <!--Start of row 2-->
+    <div class = "row">
+        <div class = "column">
+            <p>
+                <button>Blue Green</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Blue</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Purple</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Dark Purple</button>
+            </p>
+        </div>
+    </div>
+    <!--End of row 2-->
+
+
+    <!--Start of row 3-->
+    <div class = "row">
+        <div class = "column">
+            <p>
+                <button>Red</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Orange</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Yellow</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Green</button>
+            </p>
+        </div>
+    </div>
+    <!--End of row 3-->
+   
+    <!--Start of row 4-->
+    <div class = "row">
+        <div class = "column">
+            <p>
+                <button>Blue Green</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Blue</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>purple</button>
+            </p>
+        </div>
+        <div class = "column">
+            <p>
+                <button>Dark purple</button>
+            </p>
+        </div>
+    </div>
+    <!--End of row 4-->
+
+
+    <h1 align = "center">
+        Score: 0
+    </h1>
+</body>
+</html>
