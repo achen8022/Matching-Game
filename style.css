@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 24.5%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold; /* Make text bold */
+  }
+  
+
+body {
+    background-color: #4AF72F;
+}
+
+#name {
+    background-color: #F7E82F;
+}
+
+#score {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.result {
+    font-size: 36px;
+    color: #FF0000;
+    /* Red color for result text */
+}
