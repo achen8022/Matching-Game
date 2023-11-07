@@ -94,6 +94,8 @@ function compare() {
 }
 
 function restartGame(){
+    score = 0;
+    document.getElementById("score").innerHTML = score;
     location.reload();
 }
 
